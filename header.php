@@ -24,10 +24,13 @@
 
 
 
+
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/jquery.mobile-1.3.1.css" />
 <!-------------- 基础css---------- -->
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/menu.css" type="text/css" media="screen" />
 <!-------------- 头部多级菜单css---------- -->
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+
 <link rel="stylesheet" media="screen and (min-width: 750px)" href="<?php bloginfo('template_url'); ?>/jquery.desktop.css" />
 <!--------------大屏幕css---------- -->
 <link rel="stylesheet" media="screen and (max-width: 750px)" href="<?php bloginfo('template_url'); ?>/jquery.mobile.css" />
@@ -47,21 +50,26 @@
 
 <div data-role="page">
 <div data-role="header">
-
-<h1 id="logo" class="grid_4"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
+<div id="logo">
+<h1 class="grid_4"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
 <h2 class="grid_12 caption clearfix"><?php bloginfo('description'); ?></h2>
+</div>
+
+<?php if (has_nav_menu('header-menu')) : ?>
+<nav data-role="navbar">
 <?php 
 wp_nav_menu( 
 	array( 
 	 'theme_location' => 'header-menu',
-	 'container' => 'nav',
+	 'container' => 'div',
 	 'container_class' => 'headerMenu',
-	 'container_id' => '',
-	 'container_property' => 'data-role="navbar"'   
+	 'container_id' => '',  
 	 //这个参数可以给导航菜单顶级标签加自定义属性data-role="navbar"，这里修改了源程序nav-menu-template.php的193行
 	) 
 ); 
 ?>
+</nav>
+<?php endif ?>
 
 
 </div><!-------------- /header---------- -->
