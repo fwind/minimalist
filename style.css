@@ -2,6 +2,7 @@
 Theme Name: test
 */
 @charset "UTF-8";
+@media all and (min-width: 800px) {
 body {
 	border: thin solid #333;
 	width: 90%;
@@ -78,3 +79,5 @@ table {margin: 1em auto; border: 1px solid #d6d6d6; border-top: 1px solid #000; 
 table th, table th[class] {padding: 5px 5px; border: 1px solid #d6d6d6; background: #f0f0f0;}
 table td, table td[class] {padding: 5px 5px; border: 1px solid #d6d6d6;}
 table tr.alternate td {background: #fafafa;}
+
+}

@@ -1,0 +1,36 @@
+/* -----------------------body 视窗设置-----------------------*/
+.ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page {
+	top: 0;
+	left: 0;
+	width: 94%;
+	min-height: 100%;
+	position: absolute;
+	display: none;
+	border: 0;
+	margin-right: 3%;
+	margin-left: 3%;
+}
+.ui-mobile .ui-page-active { display: block; overflow: visible; border: thin solid #333;}
+
+/*----------------------- header----------------------- */
+.ui-bar-a {
+	border: thin solid #06F;
+	
+}
+
+/*-----------------------主体布局 -----------------------*/
+#main-layout{display: table; table-layout: fixed; border-collapse: separate;word-break: break-all;}/*表格*/
+/* word-break: break-all；强制换行*/
+#main-layout .main-layout-row{display: table-row;} /*表格单元行*/
+#sidebar,#container{display: table-cell; }  /*表格单元格*/
+#container {
+	border: thin solid #399;
+	width:100%;
+	min-width: 500px;
+}
+#sidebar {
+	border: thin solid #FC9;
+	min-width: 336px;
+	max-width: 336px;
+	padding: 5px
+}
