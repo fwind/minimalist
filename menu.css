@@ -1,118 +1,45 @@
 /* CSS Document */
 
 
-.headerMenu {	
-}
 
 
-/* main menu styles */
-.headerMenu .menu {
-	border: thin solid #F33; 
-    display:inline-block;
-    width:100%;
-    margin:0px auto;
-    padding:0;
 
-    border-radius:10px; /*some css3*/
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
-    box-shadow:0 2px 2px rgba(0,0,0, .5);
-    -moz-box-shadow:0 2px 2px rgba(0,0,0, .5);
-    -webkit-box-shadow:0 2px 2px rgba(0,0,0, .5);
-}
-.headerMenu .menu li {
-    margin:7px;
-    float:left;
-    position:relative;
-    list-style:none;
-}
-.headerMenu .menu a {
-    font-weight:bold;
-   
-    text-decoration:none;
-    display:block;
-    padding:8px 20px;
 
-    border-radius:10px; /*some css3*/
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
-    text-shadow:0 2px 2px rgba(0,0,0, .7);
-}
 
-/* selected menu element */
-.headerMenu .menu .current a, #nav li:hover > a {
-    color:#000;
-    border-top:1px solid #f8f8f8;
-
-    box-shadow:0 2px 2px rgba(0,0,0, .7); /*some css3*/
-    -moz-box-shadow:0 2px 2px rgba(0,0,0, .7);
-    -webkit-box-shadow:0 2px 2px rgba(0,0,0, .7);
-    text-shadow:0 2px 2px rgba(255,255,255, 0.7);
-}
-
-/* sublevels */
-.headerMenu .sub-menu li:hover a, #nav li:hover li a {
-    background:none;
-    border:none;
-    color:#000;
-}
-.headerMenu .sub-menu li a:hover {
-    background:#335599 url(http://192.168.1.11/wp/wp-content/themes/minimalist/images/bg.png) repeat-x 0 -100px;
-    color:#fff;
-
-    border-radius:10px; /*some css3*/
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
-    text-shadow:0 2px 2px rgba(0,0,0, 0.7);
-}
-
-.headerMenu .sub-menu li:first-child > a {
-    -moz-border-radius-topleft:10px; /*some css3*/
-    -moz-border-radius-topright:10px;
-    -webkit-border-top-left-radius:10px;
-    -webkit-border-top-right-radius:10px;
-}
-.headerMenu .sub-menu li:last-child > a {
-    -moz-border-radius-bottomleft:10px; /*some css3*/
-    -moz-border-radius-bottomright:10px;
-    -webkit-border-bottom-left-radius:10px;
-    -webkit-border-bottom-right-radius:10px;
-}
 
 /* drop down */
-.headerMenu .menu li:hover > ul {
-    opacity:1;
+
+#menu-headermenu {
+	
+	margin-left: -2px; 
+}
+/* drop down */
+#menu-headermenu li:hover > ul {
+    opacity:1;/* 透明 */
     visibility:visible;
 }
-.headerMenu .sub-menu  {
+#menu-headermenu .sub-menu  {
 	opacity: 0;
 	visibility: hidden;
 	padding: 0;
-	width: 175px;
+	width: 17%;
 	position: absolute;
-	border: 1px solid #7788aa;
-	border-radius: 10px; /*some css3*/
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	box-shadow: 0 2px 2px rgba(0,0,0, .5);
-	-moz-box-shadow: 0 2px 2px rgba(0,0,0, .5);
-	-webkit-box-shadow: 0 2px 2px rgba(0,0,0, .5);
-	-moz-transition: opacity .25s linear, visibility .1s linear .1s;
-	-webkit-transition: opacity .25s linear, visibility .1s linear .1s;
-	-o-transition: opacity .25s linear, visibility .1s linear .1s;
 	transition: opacity .25s linear, visibility .1s linear .1s;
-	margin-top: 13px;
+	margin-top: 5px;
+	z-index:2;
 }
 .headerMenu .sub-menu li {
     float:none;
     margin:0;
+
 }
-.headerMenu .sub-menu a {
-	font-weight: normal;
-	text-shadow: 0 2px 2px rgba(255,255,255, 0.7);
-	color: #000;
+
+.headerMenu .sub-menu a{
+	position: relative;
+	min-width: 180px;
+		
 }
-.headerMenu .sub-menu ul {
-    left:175px;
-    top:0px;
+
+.headerMenu .sub-menu .ui-btn-inner{
+	width:100%;
 }

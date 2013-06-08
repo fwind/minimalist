@@ -1,3 +1,5 @@
+
+
 /* -----------------------body 视窗设置-----------------------*/
 .ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page {
 	top: 0;
@@ -10,15 +12,23 @@
 	margin-right: 3%;
 	margin-left: 3%;
 }
-.ui-mobile .ui-page-active { display: block; overflow: visible; border: thin solid #333;}
+.ui-mobile .ui-page-active {
+	display: block;
+	overflow: visible;
+	border: thick solid #930;
+}
 
 /*----------------------- 头部脚部共同----------------------- */
 .ui-bar-a {
-	border: thin solid #06F;
+
 }
 /*----------------------- header----------------------- */
 .ui-header{
-	height:100px;
+	padding: 5px;
+	}
+/*----------------------- footer----------------------- */
+.ui-footer{
+	
 	}
 /*-----------------------主体布局 -----------------------*/
 #main-layout{display: table; table-layout: fixed; border-collapse: separate;word-break: break-all;}/*表格*/
@@ -26,13 +36,14 @@
 #main-layout .main-layout-row{display: table-row;} /*表格单元行*/
 #sidebar,#container{display: table-cell; }  /*表格单元格*/
 #container {
-	border: thin solid #399;
-	width:100%;
-	min-width: 500px;
+	border: thick solid #399;
+	width: 100%;
+	min-width: 500px;	
+	padding: 10px
 }
 #sidebar {
-	border: thin solid #FC9;
-	min-width: 336px;
-	max-width: 336px;
+	border: thick solid #FC9;
+	min-width: 250px;
+	max-width: 250px;
 	padding: 5px
 }
