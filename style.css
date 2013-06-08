@@ -1,0 +1,80 @@
+/*
+Theme Name: test
+*/
+@charset "UTF-8";
+body {
+	border: thin solid #333;
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+header {
+	height: 120px;
+	border: thin solid #06F;
+}
+#logo {
+	height: 70px;
+	border: thin solid #06F;
+	}
+#menu {
+	height: 50px;
+	border: thin solid #06F;
+	}
+#page {
+	border: thin solid #C00;
+}
+#sidebar,#container{display: table-cell;}  /*表格单元格显示*/
+#container {
+	border: thin solid #399;
+	width: 100%;
+}
+#sidebar {
+	border: thin solid #FC9;
+	width: 220px;
+}
+footer {
+	height: 80px;
+	
+	border: thin solid #06F;
+}
+
+
+
+
+
+
+
+
+/* sidebar
+------------------------------------------ */
+.widget {margin-bottom: 1em; padding: 0 0 15px; background: url("images/sidebox.png") center bottom no-repeat; }
+.widget select {width: 250px; margin: 5px 0;}
+.widget div { margin-left: auto;
+margin-right: auto;}
+#sidebar h3 {margin: 0; color: #6dc100; font: normal 1.5em/1.3em "MavenProBold",sans-serif;}
+#sidebar .tagcloud {margin: 1.5em 0; }
+#sidebar ul {list-style: none; margin: 10px 0; padding: 0;}
+#sidebar ul li {margin: 0; padding: 3px 0 3px 10px; background: url("images/arrow1.gif") 0 8px no-repeat; color: #888;}
+#sidebar ul li:first-child {border-top: none;}
+#sidebar ul li.current-menu-item>a, .sidebar ul li.current_page_item>a, .sidebar ul li.current-cat>a,
+#sidebar ul li.current-menu-item>a:visited, .sidebar ul li.current_page_item>a:visited, .sidebar ul li.current-cat>a:visited {font-weight: bold; color: #666;}
+#sidebar a {color: #006de8;}
+#sidebar a:visited, .sidebar .tagcloud a:visited {color: #4e94e3;}
+#sidebar a:hover {color: #6dc100; text-decoration: none;}
+#sidebar ul li ul {margin: 3px 0 -3px;}
+#sidebar ul ul li {padding-left: 20px; background: url("images/arrow2.gif") 10px 8px no-repeat; }
+#sidebar ul ul ul li {padding-left: 30px; background: url("images/arrow3.gif") 20px 8px no-repeat; }
+
+#sidebar form {width: 260px; margin: 10px 0 15px; padding: 0; border: none; background: none; }
+#sidebar form input {width: 200px;}
+
+
+
+
+
+
+
+table {margin: 1em auto; border: 1px solid #d6d6d6; border-top: 1px solid #000; }
+table th, table th[class] {padding: 5px 5px; border: 1px solid #d6d6d6; background: #f0f0f0;}
+table td, table td[class] {padding: 5px 5px; border: 1px solid #d6d6d6;}
+table tr.alternate td {background: #fafafa;}
