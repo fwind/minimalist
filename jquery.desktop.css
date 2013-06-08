@@ -12,12 +12,14 @@
 }
 .ui-mobile .ui-page-active { display: block; overflow: visible; border: thin solid #333;}
 
-/*----------------------- header----------------------- */
+/*----------------------- 头部脚部共同----------------------- */
 .ui-bar-a {
 	border: thin solid #06F;
-	
 }
-
+/*----------------------- header----------------------- */
+.ui-header{
+	height:100px;
+	}
 /*-----------------------主体布局 -----------------------*/
 #main-layout{display: table; table-layout: fixed; border-collapse: separate;word-break: break-all;}/*表格*/
 /* word-break: break-all；强制换行*/

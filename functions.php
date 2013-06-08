@@ -49,7 +49,7 @@ function blue_modern_page_menu_flat() {
 	wp_list_pages('sort_column=menu_order&title_li=&link_before=&link_after=&depth=1');
 	echo '</ul>';
 }
-
+//添加导航菜单
 add_action( 'init', 'register_my_menus' ); 
 function register_my_menus() { 
     register_nav_menus( 
@@ -59,5 +59,8 @@ function register_my_menus() {
         ) 
     ); 
 }
+
+
+//导航菜单兼容jquery
 
 ?>

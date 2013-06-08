@@ -18,7 +18,7 @@
     </title>
 
 
-<link rel="stylesheet" href="http://192.168.1.11/wp/wp-content/themes/minimalist/menu.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://192.168.1.11/wp/wp-content/themes/minimalist/menu1.css" type="text/css" media="screen" />
 <link rel="stylesheet" media="screen and (max-width: 550px)" href="http://192.168.1.11/wp/wp-content/themes/minimalist/jquery.mobile-1.3.1.css" />
 
 
@@ -35,4 +35,23 @@
 
 </head>
 <body>
+
+<div data-role="page">
+<div data-role="header"><h1>Page Title</h1>
+
+<?php 
+wp_nav_menu( 
+	array( 
+	 'theme_location' => 'header-menu',
+	 'container' => 'nav',
+	 'container_class' => 'headerMenu',
+	 'container_id' => '',
+	 'container_property' => 'data-role="navbar"'   
+	 //这个参数可以给导航菜单顶级标签加自定义属性data-role="navbar"，这里修改了源程序nav-menu-template.php的193行
+	) 
+); 
+?>
+
+
+</div><!-------------- /header---------- -->
 
