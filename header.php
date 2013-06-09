@@ -36,12 +36,24 @@
 <link rel="stylesheet" media="screen and (max-width: 750px)" href="<?php bloginfo('template_url'); ?>/jquery.mobile.css" />
 <!--------------小屏幕css---------- -->
 
+<?php wp_head(); //插件资源文件?>
+<?php flush(); //提高运行效率?>
+
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 
+<script>
+$("#index-page").ready(function(e) {
+    $(document).on( "pageinit", function( event ) {
+		CrayonSyntax.init();
+});
+});
+</script>
+<!--------------Crayon Syntax Highlighter插件兼容性处理，
+因为jquerymobile不是每次刷新整个页面，导致CSH插件的工具条在第2个页面开始不能使用需要刷新整个页面，
+重新加载Crayon Syntax Highlighter的js才能使用工具条---------- -->
 
-<?php wp_head(); //插件资源文件?>
-<?php flush(); //提高运行效率?>
+
 </head>
 
 
