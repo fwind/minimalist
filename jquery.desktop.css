@@ -31,8 +31,8 @@
 	
 	}
 /*-----------------------主体布局 -----------------------*/
-#main-layout{display: table; table-layout: fixed; border-collapse: separate;word-break: break-all;}/*表格*/
-/* word-break: break-all；强制换行*/
+#main-layout{display: table; table-layout: fixed; border-collapse: separate;}/*表格*/
+/* word-break: break-all；强制换行不能使用，会让cyayon syntax highlighter 出现错位*/
 #main-layout .main-layout-row{display: table-row;} /*表格单元行*/
 #sidebar,#container{display: table-cell; }  /*表格单元格*/
 #container {
