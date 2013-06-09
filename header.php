@@ -43,7 +43,7 @@
 <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 
 <script>
-$("#index-page").ready(function(e) {
+$(document).ready(function(e) {
     $(document).on( "pageinit", function( event ) {
 		CrayonSyntax.init();
 });
@@ -60,7 +60,7 @@ $("#index-page").ready(function(e) {
 
 <body>
 
-<div data-role="page">
+<div data-role="page" id="index-page">
 <div data-role="header">
 <div id="logo">
 <h1 class="grid_4"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>

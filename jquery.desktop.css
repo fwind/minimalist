@@ -30,6 +30,7 @@
 .ui-footer{
 	
 	}
+	
 /*-----------------------主体布局 -----------------------*/
 #main-layout{display: table; table-layout: fixed; border-collapse: separate;}/*表格*/
 /* word-break: break-all；强制换行不能使用，会让cyayon syntax highlighter 出现错位*/
@@ -48,6 +49,3 @@
 	padding: 5px
 }
 
-
-
-/*-----------------------分页 -----------------------*/

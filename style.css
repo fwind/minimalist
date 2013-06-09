@@ -4,3 +4,12 @@ Theme Name: test
 
 #logo a{ text-decoration: none; }
 #logo h2{ color: #F63 }
+
+/****侧栏listview的位置调整*****/
+.widget .ui-listview{
+margin: 0px;
+}
+/****侧栏listview字体****/
+.widget .ui-listview a{
+	font-size:6px;
+}
