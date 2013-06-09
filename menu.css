@@ -7,39 +7,18 @@
 
 
 
-/* drop down */
-
-#menu-headermenu {
-	
-	margin-left: -2px; 
+/****子菜单宽度调节*****/
+#menu-headermenu ul.sub-menu li.menu-item{
+	width: 90%;
+	margin-left: 5%;	
 }
-/* drop down */
+/****子菜单面板隐藏*****/
+#menu-headermenu ul.sub-menu  {
+    display:none;
+}
+
+/****子菜单面板显示*****/
 #menu-headermenu li:hover > ul {
-    opacity:1;/* 透明 */
-    visibility:visible;
-}
-#menu-headermenu .sub-menu  {
-	opacity: 0;
-	visibility: hidden;
-	padding: 0;
-	width: 17%;
-	position: absolute;
-	transition: opacity .25s linear, visibility .1s linear .1s;
-	margin-top: 5px;
-	z-index:2;
-}
-.headerMenu .sub-menu li {
-    float:none;
-    margin:0;
-
+   display:block;
 }
 
-.headerMenu .sub-menu a{
-	position: relative;
-	min-width: 160px;
-		
-}
-
-.headerMenu .sub-menu .ui-btn-inner{
-	width:100%;
-}
