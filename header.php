@@ -62,7 +62,7 @@ wp_nav_menu(
 	array( 
 	 'theme_location' => 'header-menu',
 	 'container' => 'div',
-	 'container_class' => 'headerMenu',
+	 'container_class' => 'header-menu',
 	 'container_id' => '',  
 	 //这个参数可以给导航菜单顶级标签加自定义属性data-role="navbar"，这里修改了源程序nav-menu-template.php的193行
 	) 

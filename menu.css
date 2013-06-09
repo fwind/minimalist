@@ -8,17 +8,53 @@
 
 
 /****子菜单宽度调节*****/
-#menu-headermenu ul.sub-menu li.menu-item{
+.header-menu ul.sub-menu li.menu-item{
 	width: 90%;
 	margin-left: 5%;	
 }
 /****子菜单面板隐藏*****/
-#menu-headermenu ul.sub-menu  {
+.header-menu ul.sub-menu  {
     display:none;
 }
 
 /****子菜单面板显示*****/
-#menu-headermenu li:hover > ul {
+.header-menu li:hover > ul {
    display:block;
 }
+
+/****当前菜单项标记****/
+.header-menu li.current-menu-ancestor > a,.header-menu li.current-menu-item a {
+	border: 1px solid #2373a5 /*{global-active-border}*/;
+background: #5393c5 /*{global-active-background-color}*/;
+font-weight: bold;
+color: #fff /*{global-active-color}*/;
+cursor: pointer;
+text-shadow: 0 /*{global-active-shadow-x}*/ 1px /*{global-active-shadow-y}*/ 0 /*{global-active-shadow-radius}*/ #3373a5 /*{global-active-shadow-color}*/;
+text-decoration: none;
+background-image: -webkit-gradient(linear, left top, left bottom, from( #5393c5 /*{global-active-background-start}*/), to( #6facd5 /*{global-active-background-end}*/));
+background-image: -webkit-linear-gradient( #5393c5 /*{global-active-background-start}*/, #6facd5 /*{global-active-background-end}*/);
+background-image: -moz-linear-gradient( #5393c5 /*{global-active-background-start}*/, #6facd5 /*{global-active-background-end}*/);
+background-image: -ms-linear-gradient( #5393c5 /*{global-active-background-start}*/, #6facd5 /*{global-active-background-end}*/);
+background-image: -o-linear-gradient( #5393c5 /*{global-active-background-start}*/, #6facd5 /*{global-active-background-end}*/);
+background-image: linear-gradient( #5393c5 /*{global-active-background-start}*/, #6facd5 /*{global-active-background-end}*/);
+font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
+
+}
+
+.header-menu li.current-menu-ancestor > a{
+	border: 1px solid #2373a5 /*{global-active-border}*/;
+background: #5393c5 /*{global-active-background-color}*/;
+font-weight: bold;
+color: #fff /*{global-active-color}*/;
+cursor: pointer;
+text-shadow: 0 /*{global-active-shadow-x}*/ 1px /*{global-active-shadow-y}*/ 0 /*{global-active-shadow-radius}*/ #3373a5 /*{global-active-shadow-color}*/;
+text-decoration: none;
+background-image: -webkit-gradient(linear, left top, left bottom, from( #5393c5 /*{global-active-background-start}*/), to( #6facd5 /*{global-active-background-end}*/));
+background-image: -webkit-linear-gradient( #5393c5 /*{global-active-background-start}*/, #6facd5 /*{global-active-background-end}*/);
+background-image: -moz-linear-gradient( #5393c5 /*{global-active-background-start}*/, #6facd5 /*{global-active-background-end}*/);
+background-image: -ms-linear-gradient( #5393c5 /*{global-active-background-start}*/, #6facd5 /*{global-active-background-end}*/);
+background-image: -o-linear-gradient( #5393c5 /*{global-active-background-start}*/, #6facd5 /*{global-active-background-end}*/);
+background-image: linear-gradient( #5393c5 /*{global-active-background-start}*/, #6facd5 /*{global-active-background-end}*/);
+font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
+	}
 
