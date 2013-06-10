@@ -2,8 +2,14 @@
 Theme Name: test
 */
 
-#logo a{ text-decoration: none; }
-#logo h2{ color: #F63 }
+#logo #logo-link{
+	
+	margin-top: 30px;
+}
+#logo a{
+text-decoration: none;
+}
+#logo { color: #F63 }
 
 /****侧栏listview的位置调整*****/
 .widget .ui-listview{

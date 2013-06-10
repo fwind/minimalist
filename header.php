@@ -17,14 +17,6 @@
     } ?>
     </title>
 
-
-
-
-
-
-
-
-
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/jquery.mobile-1.3.1.css" />
 <!-------------- 基础css---------- -->
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/menu.css" type="text/css" media="screen" />
@@ -36,19 +28,11 @@
 <link rel="stylesheet" media="screen and (max-width: 750px)" href="<?php bloginfo('template_url'); ?>/jquery.mobile.css" />
 <!--------------小屏幕css---------- -->
 
-<?php wp_head(); //插件资源文件?>
-
 
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 
-<script>
-$(document).ready(function(e) {
-    $(document).on( "pageinit", function( event ) {
-		CrayonSyntax.init();
-});
-});
-</script>
+
 <!--------------Crayon Syntax Highlighter插件兼容性处理，
 因为jquerymobile不是每次刷新整个页面，导致CSH插件的工具条在第2个页面开始不能使用需要刷新整个页面，
 重新加载Crayon Syntax Highlighter的js才能使用工具条---------- -->
@@ -61,10 +45,17 @@ $(document).ready(function(e) {
 <body>
 
 <div data-role="page" id="index-page">
+
+<?php wp_head(); //插件资源文件-->因为jqm是从page开始加载，插件js在head的话，
+                   //首次打开页面会执行以外，接下来的页面不会执行
+				   //如果能让插件的加载在page之内，兼容性或许会更好?>
+
+
+
 <div data-role="header">
 <div id="logo">
-<h1 class="grid_4"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-<h2 class="grid_12 caption clearfix"><?php bloginfo('description'); ?></h2>
+<div id="logo-link"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></div>
+<div><p><?php bloginfo('description'); ?></p></div>
 </div>
 
 <?php if (has_nav_menu('header-menu')) : ?>
