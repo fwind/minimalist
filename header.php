@@ -37,7 +37,7 @@
 <!--------------小屏幕css---------- -->
 
 <?php wp_head(); //插件资源文件?>
-<?php flush(); //提高运行效率?>
+
 
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
@@ -56,7 +56,7 @@ $(document).ready(function(e) {
 
 </head>
 
-
+<?php flush(); //提高运行效率?>
 
 <body>
 
